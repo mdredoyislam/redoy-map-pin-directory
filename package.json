@@ -1,0 +1,40 @@
+{
+  "name": "mri-map-pin-directory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "package:free": "npm run build && node scripts/package-free.js",
+    "package:pro": "npm run build && node scripts/package-pro.js"
+  },
+  "keywords": [],
+  "author": "Md Redoy Islam",
+  "license": "GPL-2.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdredoyislam/mri-map-pin-directory.git"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "archiver": "^8.0.0",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.23",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.1.5"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.26.0",
+    "react-hot-toast": "^2.6.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.18.1",
+    "recharts": "^3.10.0"
+  }
+}

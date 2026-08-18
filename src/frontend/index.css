@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@source "../**/*.jsx";
+@source "../../**/*.php";
+
+.mpd-frontend-root {
+  /* Scope Tailwind styles internally using container queries or specific prefixes if necessary */
+}
+
+/* Custom leaflet popup styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.leaflet-popup-content {
+  margin: 0;
+  width: 260px !important;
+}
+.leaflet-popup-close-button {
+  z-index: 50 !important;
+  color: #374151 !important;
+  background: white !important;
+  border-radius: 50% !important;
+  width: 24px !important;
+  height: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  top: 8px !important;
+  right: 8px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@source "../**/*.jsx";
+@source "../../**/*.php";
+
+#mpd-admin-app {
+    /* Base styles for the admin app */
+}
+
+/* Force Tailwind text colors to override WP Core link colors */
+#mpd-admin-app a.text-white {
+    color: #ffffff !important;
+}
+#mpd-admin-app a.text-gray-700 {
+    color: #374151 !important;
+}
+#mpd-admin-app a:hover.text-blue-700 {
+    color: #1d4ed8 !important;
+}
+#mpd-admin-app a:hover.text-emerald-700 {
+    color: #047857 !important;
+}
+
+/* Override WP Core input padding just in case */
+#mpd-admin-app input[type="text"] {
+    box-sizing: border-box;
+}
