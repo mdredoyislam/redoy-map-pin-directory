@@ -15,7 +15,7 @@
   "license": "GPL-2.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mdmdredoyislam/redoy-map-pin-directory.git"
+    "url": "https://github.com/mdredoyislam/redoy-map-pin-directory.git"
   },
   "type": "commonjs",
   "devDependencies": {

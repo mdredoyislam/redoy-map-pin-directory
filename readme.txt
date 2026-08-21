@@ -1,9 +1,9 @@
 === Redoy Map Pin Directory ===
-Contributors: mdmdredoyislam
-Donate link: https://github.com/mdmdredoyislam
+Contributors: mdredoyislam
+Donate link: https://github.com/mdredoyislam
 Tags: map, store locator, directory, openstreetmap, map pin
 Requires at least: 5.8
-Tested up to: 7.0
+Tested up to: 7.1
 Stable tag: 1.0.0
 Requires PHP: 8.0
 License: GPLv2 or later

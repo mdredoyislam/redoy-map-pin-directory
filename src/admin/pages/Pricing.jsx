@@ -122,7 +122,7 @@ export default function Pricing() {
             </li>
           </ul>
           
-          <a href="https://github.com/mdmdredoyislam" target="_blank" rel="noreferrer" className="w-full py-3 px-4 rounded-xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2 shadow-lg shadow-orange-500/30">
+          <a href="https://github.com/mdredoyislam" target="_blank" rel="noreferrer" className="w-full py-3 px-4 rounded-xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2 shadow-lg shadow-orange-500/30">
             <CreditCard size={18} />
             Get Pro Yearly
           </a>
@@ -174,7 +174,7 @@ export default function Pricing() {
             </li>
           </ul>
           
-          <a href="https://github.com/mdmdredoyislam" target="_blank" rel="noreferrer" className="w-full py-2.5 px-4 rounded-xl font-bold bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100 transition-colors flex items-center justify-center gap-2">
+          <a href="https://github.com/mdredoyislam" target="_blank" rel="noreferrer" className="w-full py-2.5 px-4 rounded-xl font-bold bg-blue-50 text-blue-600 border border-blue-200 hover:bg-blue-100 transition-colors flex items-center justify-center gap-2">
             <CreditCard size={18} />
             Upgrade Now
           </a>

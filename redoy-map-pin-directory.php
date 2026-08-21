@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Redoy Map Pin Directory
- * Plugin URI: https://github.com/mdmdredoyislam/redoy-map-pin-directory
+ * Plugin URI: https://github.com/mdredoyislam/redoy-map-pin-directory
  * Description: A modern SaaS-style Location Directory, Store Locator, and Custom Map Pin Management for WordPress.
  * Version: 1.0.0
  * Author: Md Redoy Islam
- * Author URI: https://github.com/mdmdredoyislam
+ * Author URI: https://github.com/mdredoyislam
  * License: GPL2
  * license URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: redoy-map-pin-directory
