@@ -1,5 +1,5 @@
 {
-  "name": "mri-map-pin-directory",
+  "name": "redoy-map-pin-directory",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,7 @@
   "license": "GPL-2.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mdredoyislam/mri-map-pin-directory.git"
+    "url": "https://github.com/mdmdredoyislam/redoy-map-pin-directory.git"
   },
   "type": "commonjs",
   "devDependencies": {

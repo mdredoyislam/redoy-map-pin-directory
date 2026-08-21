@@ -18,7 +18,7 @@ export default function Sidebar() {
   return (
     <div className="w-64 bg-white border-r border-gray-200 min-h-screen flex flex-col">
       <div className="p-6">
-        <h2 className="text-2xl font-bold text-gray-800 tracking-tight">MRI Directory</h2>
+        <h2 className="text-2xl font-bold text-gray-800 tracking-tight">Redoy Directory</h2>
       </div>
       <nav className="flex-1 px-4 space-y-1">
         {navItems.map((item) => (

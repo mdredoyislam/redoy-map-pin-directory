@@ -2,11 +2,11 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-const PLUGIN_SLUG = 'mri-map-pin-directory';
+const PLUGIN_SLUG = 'redoy-map-pin-directory';
 const ROOT_DIR = path.join(__dirname, '..');
 const TEMP_DIR = path.join(ROOT_DIR, 'dist-temp');
 const TEMP_PLUGIN_DIR = path.join(TEMP_DIR, PLUGIN_SLUG);
-const OUTPUT_DIR = path.join(ROOT_DIR, '..', 'mri-map-pin-directory-builds');
+const OUTPUT_DIR = path.join(ROOT_DIR, '..', 'redoy-map-pin-directory-builds');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, `${PLUGIN_SLUG}-free.zip`);
 
 // 1. Clean up
@@ -42,7 +42,7 @@ if (fs.existsSync(path.join(ROOT_DIR, 'includes'))) {
   copyRecursiveSync(path.join(ROOT_DIR, 'includes'), path.join(TEMP_PLUGIN_DIR, 'includes'));
 }
 
-const rootFiles = ['mri-map-pin-directory.php', 'readme.txt', 'index.php'];
+const rootFiles = ['redoy-map-pin-directory.php', 'readme.txt', 'index.php'];
 rootFiles.forEach(file => {
   const src = path.join(ROOT_DIR, file);
   if (fs.existsSync(src)) {

@@ -70,7 +70,7 @@ export default function Docs() {
             <h2 className="text-xl font-bold text-gray-900 mb-2">4. Display on Frontend</h2>
             <p className="text-gray-600 mb-4">To show the map to your visitors, you need to use the generated shortcode on any WordPress Page or Post.</p>
             <div className="bg-gray-900 text-gray-100 p-4 rounded-lg font-mono text-sm mb-4 inline-block">
-              [mri_mpd_map id="1"]
+              [redoy_mpd_map id="1"]
             </div>
             <ul className="list-disc list-inside text-sm text-gray-500 space-y-1">
               <li>Copy the shortcode from the <strong>Maps</strong> list.</li>
@@ -104,7 +104,7 @@ export default function Docs() {
         <div>
           <h3 className="font-bold text-blue-900 mb-1">Still need help?</h3>
           <p className="text-blue-800 text-sm mb-3">If you are stuck or experiencing a bug, please reach out to our support team or check our extensive online knowledge base.</p>
-          <a href="https://wordpress.org/support/plugin/mri-map-pin-directory/" target="_blank" rel="noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-colors text-sm">
+          <a href="https://wordpress.org/support/plugin/redoy-map-pin-directory/" target="_blank" rel="noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-colors text-sm">
             Visit Support Forum
           </a>
         </div>

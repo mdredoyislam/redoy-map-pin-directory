@@ -39,7 +39,7 @@ export default function MapsList() {
   };
 
   const handleCopy = (id) => {
-    const textToCopy = `[mri_mpd_map map_id="${id}"]`;
+    const textToCopy = `[redoy_mpd_map map_id="${id}"]`;
     const onSuccess = () => {
       setCopiedId(id);
       toast.success('Shortcode copied to clipboard!');
@@ -133,7 +133,7 @@ export default function MapsList() {
                   <div className="flex items-center gap-2">
                     <code className="bg-gray-100 text-gray-600 px-3 py-1.5 rounded-lg text-xs font-mono font-medium flex items-center gap-2 w-max">
                       <span className="text-gray-400">&lt;&gt;</span>
-                      [mri_mpd_map map_id="{map.id}"]
+                      [redoy_mpd_map map_id="{map.id}"]
                     </code>
                     <button
                       onClick={() => handleCopy(map.id)}

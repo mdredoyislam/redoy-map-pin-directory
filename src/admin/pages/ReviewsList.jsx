@@ -40,7 +40,7 @@ export default function ReviewsList() {
           </div>
           
           <a 
-            href="https://wordpress.org/support/plugin/mri-map-pin-directory/reviews/#new-post" 
+            href="https://wordpress.org/support/plugin/redoy-map-pin-directory/reviews/#new-post" 
             target="_blank" 
             rel="noreferrer"
             className="bg-white text-blue-700 hover:bg-blue-50 py-3 px-6 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors"

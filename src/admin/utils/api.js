@@ -1,14 +1,14 @@
 // API Utility for communicating with WordPress REST API
 
 // Use the localized settings if available, otherwise fallback to relative
-const API_BASE = window.mpdApiSettings ? `${window.mpdApiSettings.root}mpd/v1` : '/wp-json/mpd/v1';
+const API_BASE = window.redoyMpdApiSettings ? `${window.redoyMpdApiSettings.root}mpd/v1` : '/wp-json/mpd/v1';
 
 const getHeaders = () => {
     const headers = {
         'Content-Type': 'application/json'
     };
-    if (window.mpdApiSettings && window.mpdApiSettings.nonce) {
-        headers['X-WP-Nonce'] = window.mpdApiSettings.nonce;
+    if (window.redoyMpdApiSettings && window.redoyMpdApiSettings.nonce) {
+        headers['X-WP-Nonce'] = window.redoyMpdApiSettings.nonce;
     }
     return headers;
 };

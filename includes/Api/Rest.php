@@ -101,7 +101,7 @@ class Rest {
 
     public function get_locations($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_locations';
+        $table_name = $wpdb->prefix . 'redoy_mpd_locations';
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
         $locations = $wpdb->get_results("SELECT * FROM $table_name ORDER BY created_at DESC");
         return rest_ensure_response($locations);
@@ -109,7 +109,7 @@ class Rest {
 
     public function create_location($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_locations';
+        $table_name = $wpdb->prefix . 'redoy_mpd_locations';
         $params = $request->get_json_params();
 
         $data = [
@@ -149,7 +149,7 @@ class Rest {
 
     public function delete_location($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_locations';
+        $table_name = $wpdb->prefix . 'redoy_mpd_locations';
         $id = intval($request['id']);
 
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
@@ -165,7 +165,7 @@ class Rest {
     // --- Maps CRUD ---
     public function get_maps($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_maps';
+        $table_name = $wpdb->prefix . 'redoy_mpd_maps';
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
         $maps = $wpdb->get_results("SELECT * FROM $table_name ORDER BY created_at DESC");
         return rest_ensure_response($maps);
@@ -173,7 +173,7 @@ class Rest {
 
     public function create_map($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_maps';
+        $table_name = $wpdb->prefix . 'redoy_mpd_maps';
         $params = $request->get_json_params();
 
         $data = [
@@ -206,7 +206,7 @@ class Rest {
 
     public function delete_map($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_maps';
+        $table_name = $wpdb->prefix . 'redoy_mpd_maps';
         $id = intval($request['id']);
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
         $result = $wpdb->delete($table_name, ['id' => $id], ['%d']);
@@ -219,7 +219,7 @@ class Rest {
     // --- Categories CRUD ---
     public function get_categories($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_categories';
+        $table_name = $wpdb->prefix . 'redoy_mpd_categories';
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
         $categories = $wpdb->get_results("SELECT * FROM $table_name ORDER BY created_at DESC");
         return rest_ensure_response($categories);
@@ -227,7 +227,7 @@ class Rest {
 
     public function create_category($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_categories';
+        $table_name = $wpdb->prefix . 'redoy_mpd_categories';
         $params = $request->get_json_params();
 
         $data = [
@@ -260,7 +260,7 @@ class Rest {
 
     public function delete_category($request) {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'mpd_categories';
+        $table_name = $wpdb->prefix . 'redoy_mpd_categories';
         $id = intval($request['id']);
         // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
         $result = $wpdb->delete($table_name, ['id' => $id], ['%d']);
@@ -271,8 +271,8 @@ class Rest {
     }
 
     public function setup_db($request) {
-        require_once(MPD_PLUGIN_DIR . 'mri-map-pin-directory.php');
-        mpd_activate_plugin();
+        require_once(REDOY_MPD_PLUGIN_DIR . 'redoy-map-pin-directory.php');
+        redoy_mpd_activate_plugin();
         return rest_ensure_response(['status' => 'success', 'message' => 'Database tables created!']);
     }
 
@@ -281,7 +281,7 @@ class Rest {
     }
 
     public function get_settings($request) {
-        $settings = get_option('mpd_settings', [
+        $settings = get_option('redoy_mpd_settings', [
             'defaultCountry' => 'us',
             'defaultPinStyle' => 'standard-red',
             'popupStyle' => 'original'
@@ -301,7 +301,7 @@ class Rest {
             'defaultPinStyle' => sanitize_text_field($params['defaultPinStyle'] ?? 'standard-red'),
             'popupStyle' => sanitize_text_field($params['popupStyle'] ?? 'original'),
         ];
-        update_option('mpd_settings', $settings);
+        update_option('redoy_mpd_settings', $settings);
         return rest_ensure_response(['status' => 'success', 'message' => 'Settings saved successfully']);
     }
 }
